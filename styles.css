@@ -46,7 +46,7 @@ body {
   inset: 0;
   z-index: -2;
   pointer-events: none;
-  background-image: url("assets/images/elementos-p15-r.png");
+  background-image: url("assets/images/elementos.ai.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: min(118vmin, 1420px);
