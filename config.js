@@ -1,0 +1,6 @@
+window.SITE_CONFIG = {
+  whatsappNumber: "+5581999990457",
+  whatsappMessage: "Olá, Mayara! Vim pelo site e gostaria de mais informações sobre atendimento.",
+  instagramUrl: "https://www.instagram.com/psimayaragabrieloliveira",
+  gaMeasurementId: "G-XXXXXXXXXX"
+};
