@@ -1,7 +1,7 @@
 (function () {
   const config = window.SITE_CONFIG || {};
 
-  const whatsappNumber = String(config.whatsappNumber || "").replace(/\D/g, "");
+  const whatsappNumberEncoded = String(config.whatsappNumberEncoded || "");
   const whatsappMessage = encodeURIComponent(config.whatsappMessage || "");
   const instagramUrl = config.instagramUrl || "#";
   const gaMeasurementId = (config.gaMeasurementId || "").trim();
@@ -9,8 +9,28 @@
   const whatsappLink = document.getElementById("whatsapp-link");
   const instagramLink = document.getElementById("instagram-link");
 
-  if (whatsappLink && whatsappNumber) {
-    whatsappLink.href = "https://wa.me/" + whatsappNumber + "?text=" + whatsappMessage;
+  function decodeWhatsappNumber(encodedValue) {
+    try {
+      const decoded = atob(encodedValue);
+      return decoded.replace(/\D/g, "");
+    } catch (error) {
+      return "";
+    }
+  }
+
+  if (whatsappLink && whatsappNumberEncoded) {
+    whatsappLink.href = "#";
+    whatsappLink.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      const whatsappNumber = decodeWhatsappNumber(whatsappNumberEncoded);
+      if (!whatsappNumber) {
+        return;
+      }
+
+      const url = "https://wa.me/" + whatsappNumber + "?text=" + whatsappMessage;
+      window.open(url, "_blank", "noopener");
+    });
   }
 
   if (instagramLink) {
