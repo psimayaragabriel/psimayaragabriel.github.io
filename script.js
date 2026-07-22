@@ -101,8 +101,10 @@
 
   if (tabButtons.length > 0) {
     if (tabPanel) {
-      tabPanel.addEventListener("animationend", function () {
-        tabPanel.classList.remove("is-switching");
+      tabPanel.addEventListener("transitionend", function (event) {
+        if (event.propertyName === "opacity" || event.propertyName === "transform") {
+          tabPanel.classList.remove("is-switching");
+        }
       });
     }
 
