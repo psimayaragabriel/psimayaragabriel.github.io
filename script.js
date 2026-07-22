@@ -13,6 +13,10 @@
   const tabTitle = document.getElementById("tab-title");
   const tabTexts = document.getElementById("tab-texts");
 
+  if (tabPanel) {
+    tabPanel.style.height = "auto";
+  }
+
   const tabsContent = {
     inicio: {
       title: "Seja bem-vinda ao seu espaço de cuidado.",
@@ -80,6 +84,8 @@
     if (!content || !tabPanel || !tabTitle || !tabTexts) {
       return;
     }
+
+    tabPanel.style.height = "auto";
 
     tabButtons.forEach((button) => {
       const isActive = button.dataset.tab === tabKey;

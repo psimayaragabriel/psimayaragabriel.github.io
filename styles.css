@@ -361,9 +361,9 @@ body::before {
 .intro-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.08rem;
-  min-height: 100%;
+  min-height: 0;
 }
 
 .intro-card .intro-title,
