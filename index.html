@@ -36,7 +36,7 @@
 
         <figure class="media-card media-card--photo reveal-delay-3">
           <img
-            class="hero__photo"
+            class="hero__photo hero__photo--intro"
             src="assets/images/mayara-gabriel.jpeg"
             alt="Foto da psicóloga Mayara Gabriel"
           />
@@ -45,79 +45,28 @@
 
       <section class="hero-info reveal-delay-3" id="sobre">
         <article class="card intro-card">
-          <p class="hero__kicker">PSICÓLOGA CLÍNICA</p>
-          <h2 class="intro-title">Cuidado psicológico com escuta, presença e sensibilidade.</h2>
-          <p class="hero__text">
-            Com base na abordagem Gestalt, o processo terapêutico valoriza a experiência do aqui e
-            agora, ampliando a consciência sobre sentimentos, pensamentos e formas de se relacionar
-            com você, com o outro e com o mundo.
-          </p>
-          <p class="hero__text">
-            Em um espaço de acolhimento e presença, cada sessão é construída de forma singular,
-            respeitando sua história, seu ritmo e suas necessidades. O foco é favorecer
-            autorregulação emocional, autonomia e escolhas mais alinhadas com quem você é.
-          </p>
-          <p class="hero__text">
-            A psicoterapia pode apoiar momentos de ansiedade, insegurança, conflitos afetivos,
-            sobrecarga e transições de vida, fortalecendo recursos internos para uma vida com mais
-            clareza, sentido e qualidade nas relações.
-          </p>
-        </article>
+          <p class="hero__kicker">PSICÓLOGA CLÍNICA PARA MULHERES</p>
+          <nav class="tab-nav" aria-label="Navegação de conteúdo">
+            <button class="tab-btn is-active" type="button" data-tab="inicio">Início</button>
+            <button class="tab-btn" type="button" data-tab="quem-sou-eu">Quem sou eu?</button>
+            <button class="tab-btn" type="button" data-tab="o-que-e-gestalt">O que é Gestalt-terapia?</button>
+            <button class="tab-btn" type="button" data-tab="como-posso-ajudar">Como posso te ajudar?</button>
+          </nav>
 
-        <div class="info-cards">
-          <article class="card">
-            <span class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" role="presentation">
-                <path
-                  d="M12 3l1.9 3.8L18 8.7l-3 2.9.7 4.1-3.7-2-3.7 2 .7-4.1-3-2.9 4.1-1.9L12 3z"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </svg>
-            </span>
-            <div class="card__content">
-              <h2>Como posso te ajudar</h2>
-              <p>
-                Atendimento psicológico para mulheres com foco em ansiedade, relações, autoestima,
-                autoconhecimento e reorganização emocional diante das fases da vida.
+          <div class="tab-panel" id="tab-panel" aria-live="polite">
+            <h2 class="intro-title" id="tab-title">Seja bem-vinda ao seu espaço de cuidado.</h2>
+            <div id="tab-texts">
+              <p class="hero__text">
+                Aqui você encontra um ambiente de acolhimento, escuta e presença para cuidar da sua
+                saúde emocional com respeito ao seu tempo e à sua história.
+              </p>
+              <p class="hero__text">
+                Navegue pelas abas para conhecer minha abordagem, entender a Gestalt terapia e
+                descobrir como o processo terapêutico pode apoiar seu momento de vida.
               </p>
             </div>
-          </article>
-          <article class="card">
-            <span class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" role="presentation">
-                <rect
-                  x="4"
-                  y="5"
-                  width="16"
-                  height="11"
-                  rx="3"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                ></rect>
-                <path
-                  d="M9 19l3-3h4"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </svg>
-            </span>
-            <div class="card__content">
-              <h2>Atendimento</h2>
-              <p>
-                Atendimento exclusivamente online. Entre em contato para receber orientações sobre
-                horários, valores e primeiro encontro.
-              </p>
-            </div>
-          </article>
-        </div>
+          </div>
+        </article>
       </section>
 
       <section class="cta-strip reveal-delay-3" aria-label="Links principais">
