@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://psimayaragabriel.com.br/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://psimayaragabriel.com.br/assets/images/mayara-gabriel.jpeg</image:loc>
+      <image:title>Mayara Gabriel | Psicóloga Clínica</image:title>
+      <image:caption>Foto de Mayara Gabriel Oliveira, psicóloga clínica especialista em Gestalt-terapia</image:caption>
+    </image:image>
+  </url>
+</urlset>
