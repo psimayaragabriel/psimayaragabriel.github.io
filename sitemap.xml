@@ -4,7 +4,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://psimayaragabriel.com.br/</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -12,5 +12,11 @@
       <image:title>Mayara Gabriel | Psicóloga Clínica</image:title>
       <image:caption>Foto de Mayara Gabriel Oliveira, psicóloga clínica especialista em Gestalt-terapia</image:caption>
     </image:image>
+  </url>
+  <url>
+    <loc>https://psimayaragabriel.com.br/privacidade.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
