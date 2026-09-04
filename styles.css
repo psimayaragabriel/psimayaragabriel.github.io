@@ -443,6 +443,8 @@ body::before {
   text-decoration: none;
   font-size: 1.05rem;
   font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
   border: 1px solid transparent;
   cursor: pointer;
   transition:
