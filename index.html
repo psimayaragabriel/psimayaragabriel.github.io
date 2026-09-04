@@ -367,9 +367,82 @@
         <p class="footer__title">Mayara Gabriel Psicologia</p>
         <p class="footer__subtitle">CRP 02/30755 - Psicologia Clínica | Atendimento Online</p>
       </div>
+      <div class="footer__links">
+        <a href="#privacidade" class="footer__link" id="open-privacy-modal">Política de Privacidade & Termos</a>
+      </div>
       <p class="footer__small">Copyright 2026 - Todos os direitos reservados</p>
     </div>
   </footer>
+
+  <!-- Modal de Política de Privacidade & Termos Éticos (LGPD / CFP) -->
+  <div class="modal" id="modal-privacidade" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-privacidade-title">
+    <div class="modal__backdrop" id="modal-privacidade-backdrop"></div>
+    <div class="modal__dialog" role="document">
+      <div class="modal__header">
+        <div class="modal__header-content">
+          <span class="badge-tag badge-tag--sm">Transparência & LGPD</span>
+          <h2 class="modal__title" id="modal-privacidade-title">Política de Privacidade & Termos Éticos</h2>
+          <p class="modal__subtitle">CRP <span class="modal-num">02/30755</span> | Mayara Gabriel Psicologia Clínica</p>
+        </div>
+        <button type="button" class="modal__close" id="modal-privacidade-close" aria-label="Fechar modal de privacidade">
+          &times;
+        </button>
+      </div>
+      <div class="modal__body">
+        <section class="modal__section">
+          <h3><span class="modal-num">1.</span> Compromisso com o Sigilo e Ética Profissional</h3>
+          <p>
+            O atendimento psicológico e toda comunicação entre psicóloga e paciente são rigorosamente protegidos pelo
+            <strong>Código de Ética Profissional do Psicólogo (Resolução CFP nº <span class="modal-num">010/2005</span>)</strong> e pelas diretrizes para
+            prestação de serviços psicológicos por meios de tecnologia da informação (<strong>Resolução CFP nº <span class="modal-num">11/2018</span></strong>).
+            As informações compartilhadas em atendimentos são estritamente confidenciais e resguardadas pelo sigilo profissional.
+          </p>
+        </section>
+
+        <section class="modal__section">
+          <h3><span class="modal-num">2.</span> Coleta e Uso de Dados (LGPD - Lei <span class="modal-num">13.709/2018</span>)</h3>
+          <p>
+            Este site respeita a privacidade de cada visitante. Os dados de contato fornecidos voluntariamente por você ao
+            iniciar uma conversa pelo WhatsApp ou e-mail (como nome e número de telefone) são utilizados exclusivamente para
+            esclarecimento de dúvidas sobre a psicoterapia, alinhamento de horários e agendamento de consultas. Nenhum dado
+            pessoal é comercializado, compartilhado com terceiros ou utilizado para envio de mensagens não autorizadas.
+          </p>
+        </section>
+
+        <section class="modal__section">
+          <h3><span class="modal-num">3.</span> Cookies e Métricas de Acesso</h3>
+          <p>
+            Este site pode utilizar ferramentas analíticas (Google Analytics e Google Tag Manager) para coletar dados
+            estatísticos anônimos e agregados de navegação (como tempo de permanência, páginas visualizadas e tipo de dispositivo).
+            Esses dados têm finalidade estritamente técnica para aprimorar a experiência, a acessibilidade e o desempenho do site.
+          </p>
+        </section>
+
+        <section class="modal__section">
+          <h3><span class="modal-num">4.</span> Direitos do Titular de Dados</h3>
+          <p>
+            Em conformidade com a LGPD (Artigo <span class="modal-num">18</span>), você tem o direito de solicitar a confirmação, atualização ou exclusão de seus dados
+            de contato dos nossos canais de comunicação a qualquer momento, mediante simples solicitação direta.
+          </p>
+        </section>
+
+        <section class="modal__section">
+          <h3><span class="modal-num">5.</span> Responsável pelo Tratamento de Dados</h3>
+          <p>
+            <strong>Mayara Gabriel Oliveira</strong><br />
+            Psicóloga Clínica - CRP <span class="modal-num">02/30755</span><br />
+            Atendimento Psicológico Online em todo o Brasil<br />
+            Instagram oficial: <a href="https://www.instagram.com/psimayaragabrieloliveira" target="_blank" rel="noopener noreferrer">@psimayaragabrieloliveira</a>
+          </p>
+        </section>
+      </div>
+      <div class="modal__footer">
+        <button type="button" class="btn btn--primary btn--sm" id="modal-privacidade-confirm">
+          Compreendi
+        </button>
+      </div>
+    </div>
+  </div>
 
   <script src="config.js"></script>
   <script src="script.js"></script>

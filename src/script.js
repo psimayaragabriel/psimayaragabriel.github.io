@@ -126,6 +126,82 @@
 
   window.addEventListener("scroll", updateActiveNavLink, { passive: true });
 
+  // Privacy Modal & Anchor (#privacidade) Handling
+  const privacyModal = document.getElementById("modal-privacidade");
+  const openPrivacyBtn = document.getElementById("open-privacy-modal");
+  const closePrivacyBtn = document.getElementById("modal-privacidade-close");
+  const confirmPrivacyBtn = document.getElementById("modal-privacidade-confirm");
+  const backdropPrivacy = document.getElementById("modal-privacidade-backdrop");
+
+  function openPrivacyModal() {
+    if (!privacyModal) return;
+    privacyModal.classList.add("is-open");
+    privacyModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    if (closePrivacyBtn && typeof closePrivacyBtn.focus === "function") {
+      closePrivacyBtn.focus();
+    }
+  }
+
+  function closePrivacyModal() {
+    if (!privacyModal) return;
+    privacyModal.classList.remove("is-open");
+    privacyModal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+
+    if (window.location.hash === "#privacidade") {
+      if (window.history && window.history.replaceState) {
+        window.history.replaceState(null, document.title, window.location.pathname + window.location.search);
+      } else {
+        window.location.hash = "";
+      }
+    }
+
+    if (openPrivacyBtn && typeof openPrivacyBtn.focus === "function") {
+      openPrivacyBtn.focus();
+    }
+  }
+
+  if (openPrivacyBtn) {
+    openPrivacyBtn.addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.hash = "privacidade";
+      openPrivacyModal();
+    });
+  }
+
+  if (closePrivacyBtn) {
+    closePrivacyBtn.addEventListener("click", closePrivacyModal);
+  }
+  if (confirmPrivacyBtn) {
+    confirmPrivacyBtn.addEventListener("click", closePrivacyModal);
+  }
+  if (backdropPrivacy) {
+    backdropPrivacy.addEventListener("click", closePrivacyModal);
+  }
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && privacyModal && privacyModal.classList.contains("is-open")) {
+      closePrivacyModal();
+    }
+  });
+
+  function checkPrivacyHash() {
+    if (window.location.hash === "#privacidade") {
+      openPrivacyModal();
+    }
+  }
+
+  window.addEventListener("hashchange", function () {
+    if (window.location.hash === "#privacidade") {
+      openPrivacyModal();
+    } else if (privacyModal && privacyModal.classList.contains("is-open")) {
+      closePrivacyModal();
+    }
+  });
+
+  checkPrivacyHash();
+
   // Google Analytics setup
   if (gaMeasurementId && gaMeasurementId !== "G-XXXXXXXXXX") {
     const gaScript = document.createElement("script");
