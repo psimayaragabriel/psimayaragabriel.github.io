@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/psimayaragabriel/psimayaragabriel.github.io#readme",
   "devDependencies": {
-    "javascript-obfuscator": "^5.6.0"
+    "terser": "^5.51.2"
   }
 }

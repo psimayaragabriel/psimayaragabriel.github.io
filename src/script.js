@@ -2,8 +2,9 @@
   const config = window.SITE_CONFIG || {};
 
   // WhatsApp Configuration
-  // Direct phone number without formatting; protected from scraping via build-time obfuscation
-  const WHATSAPP_PHONE = "5581999990457";
+  // Dynamic assembly prevents basic crawler regex harvesting while keeping code clean & trusted
+  const WHATSAPP_PHONE = ["55", "81", "99999", "0457"].join("");
+
   const defaultMessage = "Olá, Mayara! Vim pelo site e gostaria de mais informações sobre atendimento.";
   const rawMessage = config.whatsappMessage || defaultMessage;
   const whatsappMessage = encodeURIComponent(rawMessage);
