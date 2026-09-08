@@ -12,20 +12,15 @@
   const instagramUrl = config.instagramUrl || "https://www.instagram.com/psimayaragabrieloliveira";
   const gaMeasurementId = (config.gaMeasurementId || "").trim();
 
-  // WhatsApp Direct Navigation in a new tab without URL encoding the phone number
-  function handleWhatsappClick(event) {
-    if (event) {
-      event.preventDefault();
-    }
-    const directUrl = "https://wa.me/" + WHATSAPP_PHONE + "?text=" + whatsappMessage;
-    window.open(directUrl, "_blank", "noopener,noreferrer");
-  }
-
+  // WhatsApp Direct Navigation configured on native links
+  const directWhatsappUrl = "https://wa.me/" + WHATSAPP_PHONE + "?text=" + whatsappMessage;
   const whatsappIds = ["whatsapp-link", "whatsapp-link-nav", "whatsapp-link-cta"];
   whatsappIds.forEach((id) => {
     const el = document.getElementById(id);
     if (el) {
-      el.addEventListener("click", handleWhatsappClick);
+      el.href = directWhatsappUrl;
+      el.target = "_blank";
+      el.rel = "noopener noreferrer";
     }
   });
 

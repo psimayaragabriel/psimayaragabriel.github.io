@@ -775,6 +775,30 @@ body::before {
   color: var(--accent);
 }
 
+.footer__emergency {
+  width: 100%;
+  padding: 0.95rem 1.25rem;
+  background: rgba(255, 249, 236, 0.55);
+  border: 1px solid rgba(17, 79, 56, 0.15);
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.footer__emergency p {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--text-soft);
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+.footer__emergency strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+
 /* ==========================================================================
    PRIVACY MODAL
    ========================================================================== */
