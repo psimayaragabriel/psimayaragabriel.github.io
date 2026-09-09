@@ -20,9 +20,7 @@ async function build() {
       drop_console: false,
       passes: 2
     },
-    mangle: {
-      toplevel: true
-    },
+    mangle: false,
     format: {
       comments: false
     }

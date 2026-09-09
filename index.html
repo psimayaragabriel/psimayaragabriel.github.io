@@ -12,6 +12,7 @@
   <meta name="keywords"
     content="psicóloga online, psicologia clínica, gestalt-terapia, psicóloga para mulheres, terapia online, ansiedade, sobrecarga feminina, autoestima, psicóloga recife, Mayara Gabriel" />
   <meta name="theme-color" content="#114f38" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://psimayaragabriel.com.br/" />
@@ -52,7 +53,15 @@
         "url": "https://psimayaragabriel.com.br/",
         "logo": "https://psimayaragabriel.com.br/assets/images/flor-simbolo.png",
         "image": "https://psimayaragabriel.com.br/assets/images/mayara-gabriel.jpeg",
-        "description": "Psicóloga clínica (CRP 02/30755) especialista em Gestalt-terapia. Atendimento psicológico 100% online para mulheres e adultos com foco em ansiedade, sobrecarga, limites saudáveis e transições de vida.",
+        "email": "psimayaragabriel@gmail.com",
+        "telephone": "+55-81-99999-0457",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Recife",
+          "addressRegion": "PE",
+          "addressCountry": "BR"
+        },
+        "description": "Psicóloga clínica (CRP 02/30755) especialista em Gestalt-terapia. Atendimento psicológico 100% online autorizado pelo Cadastro e-Psi (CFP) para mulheres e adultos com foco em ansiedade, sobrecarga, limites saudáveis e transições de vida.",
         "priceRange": "$$",
         "areaServed": {
           "@type": "Country",
@@ -65,11 +74,27 @@
           "@type": "Person",
           "name": "Mayara Gabriel Oliveira",
           "jobTitle": "Psicóloga Clínica",
-          "hasCredential": {
-            "@type": "EducationalOccupationalCredential",
-            "credentialCategory": "Registro Profissional",
-            "name": "CRP 02/30755"
-          },
+          "email": "psimayaragabriel@gmail.com",
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Registro Profissional",
+              "name": "CRP 02/30755",
+              "recognizedBy": {
+                "@type": "Organization",
+                "name": "Conselho Regional de Psicologia de Pernambuco - 2ª Região"
+              }
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Autorização para Atendimento Psicológico Online",
+              "name": "Cadastro e-Psi",
+              "recognizedBy": {
+                "@type": "Organization",
+                "name": "Conselho Federal de Psicologia (CFP)"
+              }
+            }
+          ],
           "knowsAbout": [
             "Gestalt-terapia",
             "Psicologia Clínica",
@@ -81,13 +106,15 @@
         },
         "availableService": [
           {
-            "@type": "MedicalTherapy",
+            "@type": "Service",
             "name": "Psicoterapia Online",
+            "serviceType": "Psicoterapia Online",
             "description": "Sessões individuais de psicoterapia realizadas por videoconferência com abordagem humanista e Gestalt-terapia."
           },
           {
-            "@type": "MedicalTherapy",
+            "@type": "Service",
             "name": "Gestalt-terapia",
+            "serviceType": "Gestalt-terapia",
             "description": "Abordagem focada no momento presente, autoconhecimento integral e desenvolvimento de recursos emocionais autênticos."
           }
         ]
@@ -233,16 +260,16 @@
               pessoas sempre esteve presente na minha trajetória.
             </p>
             <p class="about-text">
-              Ouvir histórias humanas sempre me emocionou, especialmente as de outras mulheres. Entendo aquelas que
-              sustentam dores em silêncio, vivem grandes sobrecargas, recomeçam muitas vezes e tentam ser fortes o tempo
-              inteiro. Escolhi a psicologia porque acredito profundamente no poder dos recomeços e que toda mulher
-              merece um espaço seguro para existir com autenticidade e se reconectar consigo mesma.
+              Ouvir histórias humanas sempre me emocionou, especialmente as de outras mulheres. Entendo os desafios e
+              sobrecargas que tantas mulheres enfrentam na rotina, buscando equilibrar múltiplos papéis, recomeçar quantas
+              vezes for preciso e ser fortes o tempo todo. Escolhi a psicologia porque acredito profundamente no poder
+              dos recomeços e que toda mulher merece um espaço seguro para existir com autenticidade e se reconectar consigo mesma.
             </p>
             <p class="about-text">
               Além da profissão, sou alguém que cresceu na praia e tem o mar como lugar de pertencimento. Amo estar ao
-              ar livre, viajar com minha família e acredito que uma boa conversa é um verdadeiro espaço de troca e cura.
-              É com essa leveza, ética e presença que ofereço meu atendimento psicológico online, pronta para caminhar
-              ao seu lado.
+              ar livre, viajar com minha família e acredito que uma boa conversa é um verdadeiro espaço de troca,
+              acolhimento e transformação. É com essa leveza, ética e presença que ofereço meu atendimento psicológico
+              online, pronta para caminhar ao seu lado.
             </p>
           </div>
         </div>
@@ -302,7 +329,7 @@
           <span class="section-tag">Como posso te ajudar?</span>
           <h2 class="section-title">Como posso te apoiar na sua jornada</h2>
           <p class="section-desc">
-            Atendimento focado em acolher seus momentos de incerteza, angústias e buscas por fortalecimento pessoal.
+            Atendimento focado em acolher seus momentos de incerteza, transições de vida e busca por fortalecimento pessoal.
           </p>
         </div>
 
@@ -312,8 +339,8 @@
             <h3 class="pillar-card__title">Acolhimento da Ansiedade e Sobrecarga</h3>
             <p class="pillar-card__text">
               No nosso espaço terapêutico, o foco principal é você e o seu bem-estar. Eu estou aqui para te ajudar a
-              lidar com a ansiedade, com a sobrecarga do dia a dia e com aquelas angústias que muitas vezes você acaba
-              silenciando na tentativa de dar conta de tudo sozinha.
+              lidar com a ansiedade, com a sobrecarga do dia a dia e com as pressões que muitas vezes você acaba
+              guardando para si na tentativa de dar conta de tudo sozinha.
             </p>
           </article>
 
@@ -370,7 +397,9 @@
       </div>
       <div class="footer__brand">
         <p class="footer__title">Mayara Gabriel Psicologia</p>
-        <p class="footer__subtitle">CRP 02/30755 - Psicologia Clínica | Atendimento Online</p>
+        <p class="footer__subtitle">CRP <span class="modal-num">02/30755</span> (Conselho Regional de Psicologia - <span class="modal-num">2ª</span> Região / PE)</p>
+        <p class="footer__info">Atendimento Psicológico Online autorizado pelo Cadastro e-Psi (Conselho Federal de Psicologia - Resolução CFP nº <span class="modal-num">11/2018</span>)</p>
+        <p class="footer__contact">E-mail: <a href="mailto:psimayaragabriel@gmail.com" class="footer__contact-link">psimayaragabriel@gmail.com</a> | Recife - PE, Brasil</p>
       </div>
       <div class="footer__links">
         <a href="privacidade.html" class="footer__link">Política de Privacidade & Termos</a>
@@ -435,9 +464,11 @@
           <h3><span class="modal-num">5.</span> Responsável pelo Tratamento de Dados</h3>
           <p>
             <strong>Mayara Gabriel Oliveira</strong><br />
-            Psicóloga Clínica - CRP <span class="modal-num">02/30755</span><br />
-            Atendimento Psicológico Online em todo o Brasil<br />
-            Instagram oficial: <a href="https://www.instagram.com/psimayaragabrieloliveira" target="_blank" rel="noopener noreferrer">@psimayaragabrieloliveira</a>
+            Psicóloga Clínica - CRP <span class="modal-num">02/30755</span> (<span class="modal-num">2ª</span> Região - Pernambuco)<br />
+            Cadastro e-Psi (Conselho Federal de Psicologia) - Atendimento Psicológico Online autorizado em todo o Brasil<br />
+            E-mail de contato: <a href="mailto:psimayaragabriel@gmail.com" class="footer__contact-link">psimayaragabriel@gmail.com</a><br />
+            Instagram oficial: <a href="https://www.instagram.com/psimayaragabrieloliveira" target="_blank" rel="noopener noreferrer">@psimayaragabrieloliveira</a><br />
+            Recife - PE, Brasil
           </p>
         </section>
       </div>

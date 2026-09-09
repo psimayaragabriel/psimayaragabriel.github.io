@@ -751,6 +751,27 @@ body::before {
   color: var(--text-soft);
 }
 
+.footer__info,
+.footer__contact {
+  margin: 0.25rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  font-family: "Georgia", "Times New Roman", serif;
+  color: var(--text-soft);
+}
+
+.footer__contact-link {
+  color: var(--text-soft);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-family: "Georgia", "Times New Roman", serif;
+  transition: color var(--fx-ui-duration) ease;
+}
+
+.footer__contact-link:hover {
+  color: var(--accent);
+}
+
 .footer__small {
   margin: 0;
   font-size: 0.9rem;

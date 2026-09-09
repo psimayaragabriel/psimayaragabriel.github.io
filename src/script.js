@@ -2,15 +2,13 @@
   const config = window.SITE_CONFIG || {};
 
   // WhatsApp Configuration
-  // Dynamic assembly prevents basic crawler regex harvesting while keeping code clean & trusted
-  const WHATSAPP_PHONE = ["55", "81", "99999", "0457"].join("");
+  const WHATSAPP_PHONE = "5581999990457";
 
   const defaultMessage = "Olá, Mayara! Vim pelo site e gostaria de mais informações sobre atendimento.";
   const rawMessage = config.whatsappMessage || defaultMessage;
   const whatsappMessage = encodeURIComponent(rawMessage);
 
   const instagramUrl = config.instagramUrl || "https://www.instagram.com/psimayaragabrieloliveira";
-  const gaMeasurementId = (config.gaMeasurementId || "").trim();
 
   // WhatsApp Direct Navigation configured on native links
   const directWhatsappUrl = "https://wa.me/" + WHATSAPP_PHONE + "?text=" + whatsappMessage;
@@ -196,22 +194,4 @@
   });
 
   checkPrivacyHash();
-
-  // Google Analytics setup
-  if (gaMeasurementId && gaMeasurementId !== "G-XXXXXXXXXX") {
-    const gaScript = document.createElement("script");
-    gaScript.async = true;
-    gaScript.src = "https://www.googletagmanager.com/gtag/js?id=" + gaMeasurementId;
-    document.head.appendChild(gaScript);
-
-    gaScript.onload = function () {
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        window.dataLayer.push(arguments);
-      }
-      window.gtag = gtag;
-      gtag("js", new Date());
-      gtag("config", gaMeasurementId);
-    };
-  }
 })();
